@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | 360ASKME — Your 24/7 Companion</title>
+    <meta name="description" content="From tourism to retirement, business to urgent needs — 360ASKME handles everything. One click. 30 seconds. Dignity guaranteed.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Georgia', serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --black: #000000;
+            --white: #ffffff;
+            --gray-light: #faf9f6;
+            --gray-mid: #4a4a4a;
+            --gold-soft: rgba(255, 215, 0, 0.08);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px 0;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .logo-gold {
+            color: var(--gold);
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--gray-mid);
+            border-left: 2px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: var(--black);
+            color: var(--gold);
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+            border: 1px solid var(--black);
+        }
+
+        .nav-btn:hover {
+            background: transparent;
+            color: var(--black);
+        }
+
+        /* Hero Section with Imigongo-inspired pattern */
+        .hero {
+            background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        /* Imigongo pattern overlay */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,215,0,0.03) 40px, rgba(255,215,0,0.03) 80px),
+                repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(255,215,0,0.02) 40px, rgba(255,215,0,0.02) 80px);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-gold {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-alt {
+            background-color: var(--gray-light);
+            position: relative;
+        }
+
+        /* Imigongo divider */
+        .imigongo-divider {
+            width: 100%;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, var(--gold), var(--gold) 20px, var(--black) 20px, var(--black) 40px);
+            margin: 0 0 60px 0;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--black);
+            letter-spacing: -0.5px;
+        }
+
+        .section-title-gold {
+            color: var(--gold);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-mid);
+            max-width: 700px;
+            margin-bottom: 48px;
+            line-height: 1.7;
+        }
+
+        /* Poetic quote */
+        .poetic-quote {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 22px;
+            font-style: italic;
+            color: var(--gray-mid);
+            border-left: 4px solid var(--gold);
+            margin: 40px auto;
+            max-width: 800px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Service Cards - Elegant, no images */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 32px;
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Imigongo-inspired corner decoration */
+        .service-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, transparent 50%, var(--gold-soft) 50%);
+            border-radius: 0 0 0 24px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: var(--gold);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+
+        .service-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--black);
+        }
+
+        .service-desc {
+            color: var(--gray-mid);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+
+        .service-link:hover {
+            transform: scale(1.02);
+        }
+
+        /* Promise Section - Imigongo style */
+        .promise-section {
+            background: var(--black);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .promise-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 10% 20%, rgba(255,215,0,0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .promise-item {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .promise-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+
+        .promise-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .promise-text {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--gold-soft) 0%, #ffffff 100%);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            background: #25D366;
+            color: white;
+            padding: 16px 48px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 24px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black);
+            color: #aaa;
+            padding: 48px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #333;
+            font-size: 12px;
+        }
+
+        @media (max-width: 1024px) {
+            .promise-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .section-title { font-size: 28px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .promise-grid { grid-template-columns: 1fr; }
+            .header-inner { flex-direction: column; text-align: center; }
+            .container { padding: 0 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div>
+                <a href="/" class="logo">360<span class="logo-gold">ASKME</span></a>
+                <div class="tagline">Stop Searching. Just Ask Me</div>
+            </div>
+            <div class="nav">
+                <a href="/" class="nav-btn">🏠 Home</a>
+                <a href="/welcome-to-rwanda.html" class="nav-btn">🇷🇼 Rwanda</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Services We <span class="hero-gold">Offer</span></h1>
+            <p>One Click. 30 seconds. Everything Handled.<br>From the moment you arrive, until the moment you leave — we are your 24/7 companion.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="imigongo-divider"></div>
+</div>
+
+<!-- Poetic Introduction -->
+<div class="container">
+    <div class="poetic-quote">
+        "Whatever you need, whenever you need it — we are awake. We are ready. We are yours."
+    </div>
+</div>
+
+<!-- Services Section -->
+<div class="section">
+    <div class="container">
+        <div class="section-title">Your Needs, <span class="section-title-gold">Our Promise</span></div>
+        <div class="section-subtitle">No matter the request, no matter the hour — 360ASKME delivers with dignity, speed, and excellence.</div>
+        
+        <div class="services-grid">
+            <!-- Tourism -->
+            <div class="service-card">
+                <div class="service-icon">🌍</div>
+                <div class="service-title">For Tourism</div>
+                <div class="service-desc">Visa assistance, itinerary planning, accommodation, car hire (luxury, safari, self-drive), last-minute activities. All in one bundle. Your journey, perfected.</div>
+                <a href="#" class="service-link">Get Service →</a>
+            </div>
+            
+            <!-- Business -->
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <div class="service-title">For Business</div>
+                <div class="service-desc">Meeting setup, company registration, legal/tax services, office hire, real estate, land acquisition. We remove barriers so you can build.</div>
+                <a href="#" class="service-link">Get Service →</a>
+            </div>
+            
+            <!-- Urgent -->
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <div class="service-title">Urgent & Last-Minute</div>
+                <div class="service-desc">Last-minute ride, ticket booking, doctor appointment, emergency help, immediate translations. "I need this now." We are always awake.</div>
+                <a href="#" class="service-link">Get Service →</a>
+            </div>
+            
+            <!-- Retirement -->
+            <div class="service-card">
+                <div class="service-icon">🏡</div>
+                <div class="service-title">Retire in Dignity</div>
+                <div class="service-desc">Visa assistance, long-stay planning, land acquisition, retirement homes, business opportunities. Your golden years, honored.</div>
+                <a href="#" class="service-link">Get Service →</a>
+            </div>
+            
+            <!-- Expat & Student -->
+            <div class="service-card">
+                <div class="service-icon">🎓</div>
+                <div class="service-title">Expat & Student</div>
+                <div class="service-desc">SIM card, bank account, housing, school search, local integration. Get settled easily. Start your new life.</div>
+                <a href="#" class="service-link">Get Service →</a>
+            </div>
+            
+            <!-- Government Services -->
+            <div class="service-card">
+                <div class="service-icon">🏛️</div>
+                <div class="service-title">Government & Finance</div>
+                <div class="service-desc">RRA tax filing, BRD loan applications, business registration, document assistance. Official channels, simplified.</div>
+                <a href="#" class="service-link">Get Service →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Promise Section - Imigongo style -->
+<div class="promise-section">
+    <div class="container">
+        <div class="promise-grid">
+            <div class="promise-item">
+                <div class="promise-icon">✅</div>
+                <div class="promise-title">100% Verified</div>
+                <div class="promise-text">Every expert background-checked</div>
+            </div>
+            <div class="promise-item">
+                <div class="promise-icon">🔒</div>
+                <div class="promise-title">Secure Payments</div>
+                <div class="promise-text">Your money, protected</div>
+            </div>
+            <div class="promise-item">
+                <div class="promise-icon">⏱️</div>
+                <div class="promise-title">24/7 Response</div>
+                <div class="promise-text">Always awake for you</div>
+            </div>
+            <div class="promise-item">
+                <div class="promise-icon">📝</div>
+                <div class="promise-title">Zero Forms</div>
+                <div class="promise-text">No paperwork. Just results.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+    <div class="container">
+        <div class="section-title" style="margin-bottom: 16px;">Ready to <span class="section-title-gold">Stop Searching?</span></div>
+        <p style="font-size: 18px; color: var(--gray-mid); margin-bottom: 24px;">One click. 30 seconds. Everything handled.</p>
+        <a href="#" class="cta-button" id="whatsappButton">📱 Click Here to Get Service →</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div style="font-size: 24px; font-weight: 800;">360<span style="color: #FFD700;">ASKME</span></div>
+                <div style="color: #aaa; font-size: 14px; margin-top: 12px;">Stop Searching. Just Ask Me<br>Your 24/7 Local Companion</div>
+            </div>
+            <div>
+                <strong style="color: white;">Visit Us</strong>
+                <div style="color: #aaa; margin-top: 12px;">Gisozi, Gasabo<br>KG712 St<br>Kigali, Rwanda</div>
+            </div>
+            <div>
+                <strong style="color: white;">Connect</strong>
+                <div style="color: #aaa; margin-top: 12px;">
+                    <a href="https://wa.me/250788499031" style="color: #aaa; text-decoration: none;">+250 788 499 031</a><br>
+                    <a href="mailto:ceo@360askme.com" style="color: #aaa; text-decoration: none;">ceo@360askme.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2026 360ASKME. Building Rwanda's 24/7 Service Infrastructure. All rights reserved.</div>
+    </div>
+</div>
+
+<script>
+    const whatsappNumber = "250788499031";
+    document.getElementById('whatsappButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(`https://wa.me/${whatsappNumber}`, '_blank');
+    });
+    document.querySelectorAll('.service-link').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open(`https://wa.me/${whatsappNumber}`, '_blank');
+        });
+    });
+</script>
+</body>
+</html>

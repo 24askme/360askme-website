@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doing Business in Rwanda | 360ASKME — Invest, Register, Grow</title>
+    <meta name="description" content="The complete guide to doing business in Rwanda. Register your company, invest with confidence, and grow with Africa's best investment destination. Expert support from 360ASKME.">
+    <meta name="keywords" content="Doing Business in Rwanda, Invest in Rwanda, President Kagame, best investment destination in Africa, Invest in Africa, Rwanda economy, Kigali business hub, register company Rwanda, Rwanda business opportunities, RDB company registration">
+    <meta name="author" content="360ASKME">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Georgia', serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --black: #000000;
+            --white: #ffffff;
+            --gray-light: #faf9f6;
+            --gray-mid: #4a4a4a;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px 0;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .logo-gold {
+            color: var(--gold);
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--gray-mid);
+            border-left: 2px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: var(--black);
+            color: var(--gold);
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+            border: 1px solid var(--black);
+        }
+
+        .nav-btn:hover {
+            background: transparent;
+            color: var(--black);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-gold {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Content */
+        .content-section {
+            padding: 60px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .content-section-alt {
+            background-color: var(--gray-light);
+            padding: 60px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--black);
+        }
+
+        .section-title-gold {
+            color: var(--gold);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-mid);
+            margin-bottom: 32px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 32px 0 16px;
+            color: var(--black);
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 24px 0 12px;
+            color: var(--black);
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--gray-mid);
+        }
+
+        ul, ol {
+            margin: 20px 0 20px 40px;
+            color: var(--gray-mid);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .cta-card {
+            background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+            color: white;
+            padding: 48px;
+            border-radius: 24px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-card h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+        }
+
+        .info-box {
+            background: var(--gray-light);
+            border-left: 4px solid var(--gold);
+            padding: 24px;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        .info-box strong {
+            color: var(--black);
+        }
+
+        .testimonial {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            margin-top: 16px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--gray-light);
+            padding: 32px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ul {
+            margin-bottom: 0;
+            columns: 2;
+            column-gap: 40px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--black);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .toc a:hover {
+            border-bottom-color: var(--gold);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black);
+            color: #aaa;
+            padding: 48px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #333;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .section-title { font-size: 28px; }
+            .header-inner { flex-direction: column; text-align: center; }
+            .toc ul { columns: 1; }
+            .container { padding: 0 20px; }
+            .cta-card { padding: 32px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div>
+                <a href="/" class="logo">360<span class="logo-gold">ASKME</span></a>
+                <div class="tagline">Stop Searching. Just Ask Me</div>
+            </div>
+            <div class="nav">
+                <a href="/" class="nav-btn">🏠 Home</a>
+                <a href="/welcome-to-rwanda.html" class="nav-btn">🇷🇼 Rwanda</a>
+                <a href="/services.html" class="nav-btn">✨ Services</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="container">
+        <h1>The Complete Guide to <span class="hero-gold">Doing Business in Rwanda</span></h1>
+        <p>Register your company. Invest with confidence. Grow with Africa's best investment destination — under the leadership of President Kagame, Rwanda has become the continent's most compelling business story.</p>
+    </div>
+</div>
+
+<!-- Table of Contents -->
+<div class="container">
+    <div class="toc">
+        <h3>📖 What You Will Find in This Guide</h3>
+        <ul>
+            <li><a href="#why">1. Why Do Business in Rwanda? — Africa's Rising Star</a></li>
+            <li><a href="#registration">2. Company Registration — Step by Step</a></li>
+            <li><a href="#tax">3. Taxes Every Business Owner Should Know</a></li>
+            <li><a href="#permits">4. Business Permits & Licenses</a></li>
+            <li><a href="#sectors">5. Best Sectors for Investment in Rwanda</a></li>
+            <li><a href="#foreign">6. Foreign Investment & Ownership Rules</a></li>
+            <li><a href="#banking">7. Banking & Payments</a></li>
+            <li><a href="#hr">8. Hiring Employees in Rwanda</a></li>
+            <li><a href="#meetings">9. Meetings, Events & Business Support</a></li>
+            <li><a href="#challenges">10. Common Challenges & How to Overcome Them</a></li>
+            <li><a href="#stepbystep">11. Step-by-Step: Your First 90 Days in Business</a></li>
+            <li><a href="#faq">12. Frequently Asked Questions</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Section 1: Why Rwanda -->
+<div class="content-section" id="why">
+    <div class="container">
+        <div class="section-title">1. Why Do Business in <span class="section-title-gold">Rwanda? Africa's Rising Star</span></div>
+        <p>Under the visionary leadership of President Paul Kagame, Rwanda has transformed into one of Africa's most compelling investment destinations. The World Bank's Doing Business report consistently ranks Rwanda among the top reformers and easiest places to do business on the continent. For anyone looking to <strong>invest in Africa</strong>, Rwanda is the gateway.</p>
+
+        <h3>Key Advantages</h3>
+        <ul>
+            <li><strong>Speed of registration:</strong> Register a company online in under 6 hours through the Rwanda Development Board (RDB) — at no cost from the government.</li>
+            <li><strong>Political stability:</strong> One of Africa's most stable and well-governed nations, consistently ranked as a top investment destination.</li>
+            <li><strong>Strategic location:</strong> Gateway to East and Central Africa (over 300 million people within reach).</li>
+            <li><strong>Modern infrastructure:</strong> Excellent roads, reliable electricity, fast internet — built for business.</li>
+            <li><strong>No corruption:</strong> Zero tolerance for bribery — transparent, efficient processes that protect investors.</li>
+            <li><strong>English-friendly:</strong> English is the language of business and government.</li>
+            <li><strong>Incentives:</strong> Tax holidays, reduced rates for strategic investments.</li>
+        </ul>
+
+        <div class="testimonial">
+            "I registered my company in Kigali in less than a day through 360ASKME. They handled everything while I was still overseas. By the time I landed, my business was ready to operate."
+            <div class="testimonial-author">— Michael, tech investor from UK</div>
+        </div>
+
+        <div class="info-box">
+            <strong>💼 360ASKME Business Support:</strong> Ready to invest in Rwanda? Not sure where to start? Let us guide you through every step. We handle paperwork, liaise with RDB, and ensure your application is complete — even before you arrive. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="whyWaButton">Start Your Business Journey →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 2: Registration -->
+<div class="content-section-alt" id="registration">
+    <div class="container">
+        <div class="section-title">2. Company Registration — <span class="section-title-gold">Step by Step</span></div>
+        <p>Rwanda has one of the most efficient company registration systems in the world — and the government charges nothing for the online application. Here is exactly how it works.</p>
+
+        <h3>Step 1: Reserve Your Company Name</h3>
+        <p>Search the RDB online portal to ensure your desired company name is available. You can reserve it immediately — at no cost.</p>
+
+        <h3>Step 2: Prepare Required Documents</h3>
+        <ul>
+            <li>Copy of passport (for foreign directors/shareholders)</li>
+            <li>Passport photos</li>
+            <li>Proof of address (utility bill or bank statement)</li>
+            <li>Memorandum and Articles of Association (template available online)</li>
+        </ul>
+
+        <h3>Step 3: Submit Online Application</h3>
+        <p>All applications go through the RDB Company Registration Portal. The government fee is <strong>zero — completely free</strong> for online registration.</p>
+
+        <h3>Step 4: Receive Certificate of Incorporation</h3>
+        <p>Once approved (usually within 6-24 hours), you receive your Certificate of Incorporation, Tax Identification Number (TIN), and registration with RSSB (social security) automatically.</p>
+
+        <h3>Step 5: Open a Corporate Bank Account</h3>
+        <p>With your Certificate of Incorporation, you can open a business bank account with any local bank. 360ASKME can accompany you or handle the process remotely.</p>
+
+        <div class="info-box">
+            <strong>📄 360ASKME Registration Service:</strong> While government registration is free, the paperwork, follow-up, and coordination can be time-consuming — especially from overseas. We handle the entire process for you. Name reservation, document preparation, submission, follow-up. <strong>Contact us for a personalized quote based on your specific needs.</strong> One message. We handle the rest. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="registrationWaButton">Register My Company →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 3: Taxes -->
+<div class="content-section" id="tax">
+    <div class="container">
+        <div class="section-title">3. Taxes Every <span class="section-title-gold">Business Owner Should Know</span></div>
+        <p>Rwanda's tax system is straightforward, digital, and transparent. The Rwanda Revenue Authority (RRA) has made filing and payment easy.</p>
+
+        <h3>Key Taxes</h3>
+        <ul>
+            <li><strong>Corporate Income Tax (CIT):</strong> 30% of net profits (reduced to 20% for certain sectors or startups in special economic zones)</li>
+            <li><strong>Value Added Tax (VAT):</strong> 18% on most goods and services (registration required if annual turnover exceeds 20 million RWF)</li>
+            <li><strong>Withholding Tax:</strong> 15% on dividends, interest, and certain payments</li>
+            <li><strong>Pay As You Earn (PAYE):</strong> Progressive rates from 0% to 30% on employee salaries</li>
+            <li><strong>Rental Income Tax:</strong> 20% on rental income</li>
+        </ul>
+
+        <h3>Tax Incentives for Investors</h3>
+        <ul>
+            <li>Tax holidays for qualifying investments (up to 7 years)</li>
+            <li>Reduced corporate tax rates (15% for certain sectors)</li>
+            <li>VAT exemptions on qualifying capital equipment</li>
+            <li>Duty-free import of machinery and raw materials</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>📊 360ASKME Tax Assistance:</strong> RRA tax filing, VAT registration, tax advisory, and representation. We make taxes painless. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="taxWaButton">Get Tax Help →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 4: Permits -->
+<div class="content-section-alt" id="permits">
+    <div class="container">
+        <div class="section-title">4. Business Permits & <span class="section-title-gold">Licenses</span></div>
+        <p>Depending on your industry, you may need additional permits beyond the Certificate of Incorporation.</p>
+
+        <h3>Common Permits</h3>
+        <ul>
+            <li><strong>Operational License (City of Kigali):</strong> Required for physical businesses (restaurants, shops, offices)</li>
+            <li><strong>Sector-Specific Licenses:</strong> Health (pharmacies, clinics), Education (schools), Tourism (hotels, tour operators), Construction</li>
+            <li><strong>Import/Export License:</strong> For businesses trading across borders</li>
+            <li><strong>Work Permit:</strong> For foreign employees (including the business owner)</li>
+        </ul>
+
+        <h3>Work Permits for Business Owners</h3>
+        <p>If you are a foreigner starting a business in Rwanda, you will need a work permit. Options include:</p>
+        <ul>
+            <li><strong>Investor Visa:</strong> For those investing at least $50,000 (reduced for certain sectors)</li>
+            <li><strong>Employment Work Permit:</strong> For those employed by their own company</li>
+            <li><strong>Long-Term Visa (Business):</strong> For frequent business travelers</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>📋 360ASKME Permit Assistance:</strong> We help you identify which permits you need, prepare applications, and follow up with the relevant authorities. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="permitsWaButton">Permit Assistance →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 5: Sectors -->
+<div class="content-section" id="sectors">
+    <div class="container">
+        <div class="section-title">5. Best Sectors for <span class="section-title-gold">Investment in Rwanda</span></div>
+        <p>The Rwanda Development Board (RDB) has identified priority sectors for investment. These offer the most opportunities and incentives for those looking to <strong>invest in Africa</strong>.</p>
+
+        <h3>Priority Investment Sectors</h3>
+        <ul>
+            <li><strong>Tourism & Hospitality:</strong> Hotels, lodges, tour operators, MICE (Meetings, Incentives, Conferences, Exhibitions) — let 360ASKME help you enter this market</li>
+            <li><strong>ICT & Innovation:</strong> Software development, business process outsourcing, data centers</li>
+            <li><strong>Manufacturing:</strong> Agro-processing, textiles, construction materials, pharmaceuticals</li>
+            <li><strong>Energy:</strong> Renewable energy (solar, hydro, methane gas)</li>
+            <li><strong>Agriculture:</strong> Coffee, tea, horticulture, livestock</li>
+            <li><strong>Real Estate & Construction:</strong> Affordable housing, commercial real estate</li>
+            <li><strong>Healthcare & Education:</strong> Private hospitals, clinics, international schools</li>
+            <li><strong>Financial Services:</strong> Banking, insurance, fintech</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>🔍 360ASKME Opportunity Research:</strong> Not sure which sector fits your background? Let us help you research opportunities, connect with local partners, and assess market demand. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="sectorsWaButton">Explore Opportunities →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 6: Foreign Investment -->
+<div class="content-section-alt" id="foreign">
+    <div class="container">
+        <div class="section-title">6. Foreign Investment & <span class="section-title-gold">Ownership Rules</span></div>
+        <p>Rwanda is one of the most open economies in Africa for foreign investors — truly the best investment destination in Africa for those seeking ease and transparency.</p>
+
+        <h3>Key Rules</h3>
+        <ul>
+            <li><strong>100% foreign ownership</strong> is permitted in most sectors</li>
+            <li><strong>No local partner requirement</strong> for company registration</li>
+            <li><strong>Repatriation of profits</strong> is allowed without restriction</li>
+            <li><strong>Investment protection</strong> under Rwandan law and bilateral treaties</li>
+            <li><strong>Minimum investment threshold</strong> for Investor Visa is $50,000 (lower for certain sectors)</li>
+        </ul>
+
+        <h3>Restricted Sectors (Require Approval)</h3>
+        <ul>
+            <li>Media (broadcasting licenses)</li>
+            <li>Security services</li>
+            <li>Mining (mineral rights)</li>
+            <li>Telecommunications</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>🌍 360ASKME Foreign Investment Support:</strong> Investor visa application, business registration, partner identification, legal guidance. We make your entry seamless. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="foreignWaButton">Investor Support →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 7: Banking -->
+<div class="content-section" id="banking">
+    <div class="container">
+        <div class="section-title">7. Banking & <span class="section-title-gold">Payments</span></div>
+        <p>Rwanda has a modern, stable banking system with several excellent options for businesses.</p>
+
+        <h3>Top Banks for Business</h3>
+        <ul>
+            <li><strong>Bank of Kigali (BK):</strong> Largest bank, excellent business services, strong digital banking</li>
+            <li><strong>I&M Bank:</strong> Good for international businesses, strong trade finance</li>
+            <li><strong>KCB Bank:</strong> Regional presence, good for East African operations</li>
+            <li><strong>Equity Bank:</strong> Strong in SME banking, good digital tools</li>
+            <li><strong>GTBank:</strong> Nigerian parent, good for West African connections</li>
+        </ul>
+
+        <h3>Opening a Corporate Bank Account</h3>
+        <p>Once you have your Certificate of Incorporation, you can open an account. 360ASKME can accompany you or handle the process remotely.</p>
+
+        <div class="info-box">
+            <strong>🏦 360ASKME Banking Assistance:</strong> Need help opening a corporate account? We can accompany you, ensure you have the right documents, and expedite the process. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="bankingWaButton">Banking Help →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 8: HR -->
+<div class="content-section-alt" id="hr">
+    <div class="container">
+        <div class="section-title">8. Hiring <span class="section-title-gold">Employees in Rwanda</span></div>
+        <p>Rwanda has a young, educated, English-speaking workforce. Here is what you need to know about building your team.</p>
+
+        <h3>Key Employment Considerations</h3>
+        <ul>
+            <li><strong>Minimum wage:</strong> There is no national minimum wage. 360ASKME helps you set competitive, fair salaries that attract top talent while respecting market conditions.</li>
+            <li><strong>Working hours:</strong> 40 hours per week (8 hours/day, 5 days/week)</li>
+            <li><strong>Paid leave:</strong> 18 working days per year minimum</li>
+            <li><strong>Social security (RSSB):</strong> Mandatory contributions — 8% employer, 4% employee</li>
+            <li><strong>Probation period:</strong> Maximum 3 months (6 months for specialized roles)</li>
+            <li><strong>Termination notice:</strong> 1-3 months depending on length of service</li>
+        </ul>
+
+        <h3>Where to Find Talent</h3>
+        <ul>
+            <li><strong>360ASKME.com — Your #1 Talent Partner:</strong> We don't just help you find employees; we help you build your team. Recruitment assistance, contract drafting, RSSB registration, payroll setup — all through one message.</li>
+            <li><strong>LinkedIn:</strong> Growing professional network in Rwanda</li>
+            <li><strong>Job boards:</strong> Indeed Rwanda, Jobs Rwanda</li>
+            <li><strong>Universities:</strong> University of Rwanda (UR), Carnegie Mellon University Africa, African Leadership University (ALU)</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>👥 360ASKME HR Support:</strong> Recruitment assistance, employment contract drafting, RSSB registration, payroll setup, and salary benchmarking. We help you build a team that reflects your values. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="hrWaButton">Hiring Help →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 9: Meetings -->
+<div class="content-section" id="meetings">
+    <div class="container">
+        <div class="section-title">9. Meetings, Events & <span class="section-title-gold">Business Support</span></div>
+        <p>Rwanda is a premier destination for conferences and business events. The Kigali Convention Centre (KCC) is world-class. And 360ASKME is your 24/7 business concierge.</p>
+
+        <h3>Business Support Services (via 360ASKME)</h3>
+        <ul>
+            <li><strong>Meeting setup:</strong> Venue booking, AV equipment, catering — one message</li>
+            <li><strong>Office rental:</strong> Flexible coworking spaces and traditional office leases — we find the best fit</li>
+            <li><strong>Translation services:</strong> English, French, Kinyarwanda, and other languages — available 24/7</li>
+            <li><strong>Legal and accounting services:</strong> Trusted local firms vetted by 360ASKME</li>
+            <li><strong>Printing and branding:</strong> Business cards, brochures, signage — even at 2 AM, we handle it</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>🤝 360ASKME Business Concierge:</strong> Need a meeting room for tomorrow? Urgent printing at 10 PM? A translator for a client dinner? We handle it. 24/7. One message. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="meetingsWaButton">Business Concierge →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 10: Challenges -->
+<div class="content-section-alt" id="challenges">
+    <div class="container">
+        <div class="section-title">10. Common Challenges & <span class="section-title-gold">How 360ASKME Solves Them</span></div>
+        <p>Rwanda is business-friendly, but no country is perfect. Here are common challenges and how 360ASKME helps you navigate them.</p>
+
+        <h3>Challenge 1: Navigating Bureaucracy</h3>
+        <p>Even efficient systems have processes. We handle paperwork, follow up, and ensure nothing falls through the cracks — often before you even arrive in Rwanda.</p>
+
+        <h3>Challenge 2: Language Barriers</h3>
+        <p>While English is common, some government forms and meetings may use French or Kinyarwanda. We provide translation support 24/7.</p>
+
+        <h3>Challenge 3: Finding Trusted Partners</h3>
+        <p>We have a vetted network of lawyers, accountants, contractors, and suppliers. We introduce you only to those we trust.</p>
+
+        <h3>Challenge 4: After-Hours Urgencies</h3>
+        <p>Business doesn't stop at 5 PM. Neither do we. 24/7 support for anything — printing, transport, last-minute requests.</p>
+
+        <div class="info-box">
+            <strong>🛡️ Your 24/7 Business Partner:</strong> Whatever challenge arises, message 360ASKME. We solve problems so you can focus on growing your business. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="challengesWaButton">Talk to a Problem Solver →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 11: Step by Step -->
+<div class="content-section" id="stepbystep">
+    <div class="container">
+        <div class="section-title">11. Step-by-Step: <span class="section-title-gold">Your First 90 Days in Business</span></div>
+
+        <h3>Week 1-2: Registration & Setup (With 360ASKME)</h3>
+        <ul>
+            <li>Contact 360ASKME — we assign a dedicated business advisor</li>
+            <li>Reserve company name (we handle it)</li>
+            <li>Prepare and submit registration documents (we handle it)</li>
+            <li>Receive Certificate of Incorporation and TIN</li>
+            <li>Open corporate bank account (we accompany you)</li>
+        </ul>
+
+        <h3>Week 3-4: Permits & Compliance</h3>
+        <ul>
+            <li>Apply for operational license (if needed) — we guide you</li>
+            <li>Apply for sector-specific permits — we guide you</li>
+            <li>Register for VAT (if required) — we handle it</li>
+            <li>Register with RSSB (social security) — we handle it</li>
+        </ul>
+
+        <h3>Week 5-8: Operations & Team</h3>
+        <ul>
+            <li>Secure office space (rent or coworking) — we help you find it</li>
+            <li>Begin hiring (if needed) — we assist with recruitment</li>
+            <li>Set up accounting and invoicing systems — we recommend trusted partners</li>
+            <li>Develop marketing materials — we handle urgent printing</li>
+        </ul>
+
+        <h3>Week 9-12: Launch & Growth</h3>
+        <ul>
+            <li>Soft launch or pilot phase — with 360ASKME support</li>
+            <li>Network with potential clients and partners — we make introductions</li>
+            <li>Refine operations based on feedback</li>
+            <li>Full launch — with 24/7 business concierge support</li>
+        </ul>
+
+        <div class="cta-card">
+            <h3>Ready to start your business in Rwanda?</h3>
+            <p>Let 360ASKME be your launch partner. One message. 30 seconds. We handle the rest — even before you arrive.</p>
+            <a href="#" class="cta-button" id="stepWaButton">📱 Start Your Business →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 12: FAQ -->
+<div class="content-section-alt" id="faq">
+    <div class="container">
+        <div class="section-title">12. Frequently Asked <span class="section-title-gold">Questions</span></div>
+
+        <h4>How long does it take to register a company in Rwanda?</h4>
+        <p>Typically 6-24 hours once all documents are submitted. With 360ASKME, we can begin the process before you even arrive in Rwanda.</p>
+
+        <h4>Do I need a local partner to register a company?</h4>
+        <p>No. 100% foreign ownership is permitted in most sectors.</p>
+
+        <h4>What is the minimum investment to get an Investor Visa?</h4>
+        <p>$50,000 USD, though this can be lower for certain priority sectors. Contact 360ASKME for current requirements.</p>
+
+        <h4>Can I operate my business remotely from outside Rwanda?</h4>
+        <p>Yes, but you will need a local representative for certain compliance matters. 360ASKME can act as your local liaison.</p>
+
+        <h4>What is the corporate tax rate?</h4>
+        <p>30% on net profits, with reduced rates (20% or 15%) for qualifying businesses.</p>
+
+        <h4>How do I pay taxes?</h4>
+        <p>All tax filing and payment is done online through the RRA e-tax portal. 360ASKME can handle this for you.</p>
+
+        <h4>Can 360ASKME handle all of this for me?</h4>
+        <p>Yes. Company registration, permits, bank account, tax filing, HR, and ongoing business support. One message. We handle the rest. Contact us for a personalized quote based on your needs.</p>
+
+        <div class="cta-card">
+            <h3>Still have questions about doing business in Rwanda?</h3>
+            <p>Stop searching. Just Ask Me. One message. 30 seconds. We handle the rest.</p>
+            <a href="#" class="cta-button" id="faqWaButton">📱 Ask Your Question Now →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div><div style="font-size:24px; font-weight:800;">360<span style="color:#FFD700;">ASKME</span></div><div style="color:#aaa; font-size:14px;">Stop Searching. Just Ask Me<br>Your 24/7 Local Companion</div></div>
+            <div><strong style="color:white;">Visit Us</strong><div style="color:#aaa; margin-top:12px;">Gisozi, Gasabo<br>KG712 St<br>Kigali, Rwanda</div></div>
+            <div><strong style="color:white;">Connect</strong><div style="color:#aaa; margin-top:12px;"><a href="https://wa.me/250788499031" style="color:#aaa; text-decoration:none;">+250 788 499 031</a><br><a href="mailto:ceo@360askme.com" style="color:#aaa; text-decoration:none;">ceo@360askme.com</a></div></div>
+        </div>
+        <div class="copyright">© 2026 360ASKME. Building Rwanda's 24/7 Service Infrastructure.</div>
+    </div>
+</div>
+
+<script>
+    const whatsappNumber = "250788499031";
+    const businessMessage = "I am interested in doing business in Rwanda. Can you help me with more information?";
+
+    const buttons = [
+        'whyWaButton', 'registrationWaButton', 'taxWaButton', 'permitsWaButton',
+        'sectorsWaButton', 'foreignWaButton', 'bankingWaButton', 'hrWaButton',
+        'meetingsWaButton', 'challengesWaButton', 'stepWaButton', 'faqWaButton'
+    ];
+
+    buttons.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(businessMessage)}`, '_blank');
+            });
+        }
+    });
+</script>
+</body>
+</html>

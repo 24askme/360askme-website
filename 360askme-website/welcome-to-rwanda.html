@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Rwanda | 360ASKME — The Land of a Thousand Hills</title>
+    <meta name="description" content="Rwanda — where mountains touch the sky, gorillas walk in mist, and a nation rises with dignity. Your journey starts here with 360ASKME.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Georgia', serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --black: #000000;
+            --white: #ffffff;
+            --gray-light: #faf9f6;
+            --gray-mid: #4a4a4a;
+            --gold-soft: rgba(255, 215, 0, 0.15);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px 0;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .logo-gold {
+            color: var(--gold);
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--gray-mid);
+            border-left: 2px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: var(--black);
+            color: var(--gold);
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+            border: 1px solid var(--black);
+        }
+
+        .nav-btn:hover {
+            background: transparent;
+            color: var(--black);
+        }
+
+        /* Hero Section with Image + Gold Dust */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url('https://www.360askme.com/images/rwanda-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        /* Gold Dust Particles Overlay */
+        .gold-dust {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(2px 2px at 20px 30px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(1px 1px at 40px 70px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(1px 1px at 80px 50px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(3px 3px at 120px 90px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 160px 40px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(1px 1px at 200px 120px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 250px 30px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(3px 3px at 300px 150px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(1px 1px at 350px 80px, #FFD700, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 400px 200px, #FFD700, rgba(0,0,0,0));
+            background-repeat: no-repeat;
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-gold {
+            color: var(--gold);
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section-alt {
+            background-color: var(--gray-light);
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--black);
+            letter-spacing: -0.5px;
+        }
+
+        .section-title-gold {
+            color: var(--gold);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-mid);
+            max-width: 700px;
+            margin-bottom: 48px;
+            line-height: 1.7;
+        }
+
+        /* Poetic Quote */
+        .poetic-quote {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 22px;
+            font-style: italic;
+            color: var(--gray-mid);
+            border-left: 4px solid var(--gold);
+            margin: 40px auto;
+            max-width: 800px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .gallery-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: var(--white);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--black);
+            background: white;
+        }
+
+        /* Big Five Grid */
+        .bigfive-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 24px;
+            margin: 48px 0;
+        }
+
+        .bigfive-card {
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .bigfive-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .bigfive-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 16px;
+        }
+
+        .bigfive-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        /* Destinations List */
+        .destinations-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 32px 0;
+            justify-content: center;
+        }
+
+        .destination-badge {
+            background: var(--black);
+            color: var(--gold);
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Investment Grid */
+        .investment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .investment-card {
+            border-radius: 24px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .investment-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .investment-content {
+            padding: 24px;
+        }
+
+        .investment-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            background: #25D366;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 24px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black);
+            color: #aaa;
+            padding: 48px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #333;
+            font-size: 12px;
+        }
+
+        @media (max-width: 1024px) {
+            .bigfive-grid { grid-template-columns: repeat(3, 1fr); }
+            .gallery-grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .investment-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 36px; }
+            .section-title { font-size: 28px; }
+            .bigfive-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid-3 { grid-template-columns: 1fr; }
+            .investment-grid { grid-template-columns: 1fr; }
+            .header-inner { flex-direction: column; text-align: center; }
+            .container { padding: 0 20px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div>
+                <a href="/" class="logo">360<span class="logo-gold">ASKME</span></a>
+                <div class="tagline">Stop Searching. Just Ask Me</div>
+            </div>
+            <div class="nav">
+                <a href="/" class="nav-btn">🏠 Home</a>
+                <a href="/services.html" class="nav-btn">✨ Services</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section with Image + Gold Dust -->
+<div class="hero">
+    <div class="gold-dust"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1>Welcome to <span class="hero-gold">Rwanda</span></h1>
+            <p>The Land of a Thousand Hills — where the sunrise paints mountains in gold,<br>and a nation rises with dignity, grace, and boundless hope.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Poetic Introduction -->
+<div class="container">
+    <div class="poetic-quote">
+        "Rwanda does not just welcome you. It embraces you. It whispers to your soul: <br>You are home."
+    </div>
+</div>
+
+<!-- Section 1: Kigali -->
+<div class="section">
+    <div class="container">
+        <div class="section-title">Kigali — <span class="section-title-gold">The Heart That Beats Clean</span></div>
+        <div class="section-subtitle">The cleanest city in Africa. Safe streets that sing with life. A vibrant culture where past and future dance together. A growing tech hub with a world-class convention center. Kigali opens its arms — and you will not want to leave.</div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/kigali-1.jpg" alt="Kigali City"><div class="gallery-caption">Kigali, The Cleanest & Greenest Heart of Africa</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/kigali-2.jpg" alt="Kigali Convention Centre"><div class="gallery-caption">Kigali Convention Centre</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/kigali-3.jpg" alt="Kigali Streets"><div class="gallery-caption">Very Good Roads & Safe Streets — Where Order Dances with Freedom</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/kigali-4.jpg" alt="Kigali Night"><div class="gallery-caption">Kigali by Night — Lightened Everywhere, Safe Every Moment</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/kigali-5.jpg" alt="BK Arena"><div class="gallery-caption">Kigali's Green Skyscraper Emerging — A Promise Reaching for the Sky</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/kigali-6.jpg" alt="Kigali Views"><div class="gallery-caption">Vision City — Modern, Green, and Built with Dignity</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 2: Eco-Tourism -->
+<div class="section-alt">
+    <div class="container">
+        <div class="section-title">Where Mountains Whisper and <span class="section-title-gold">Gorillas Roam Free</span></div>
+        <div class="section-subtitle">Home to the majestic mountain gorillas, the deep blue of Lake Kivu, and the ancient mist of Nyungwe where chimpanzees laugh in the canopy. Nature does not just exist here — it tells stories.</div>
+        <div class="gallery-grid-3">
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/gorilla.jpg" alt="Mountain Gorilla"><div class="gallery-caption">Mountain Gorilla — Volcanoes NP</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/nyungwe.jpg" alt="Nyungwe Forest"><div class="gallery-caption">Nyungwe Forest — The Evergreen Virgin, Untouched for Centuries</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/chimpanzee.jpg" alt="Chimpanzee"><div class="gallery-caption">Chimpanzees — Nyungwe NP</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/canopy-walk.jpg" alt="Canopy Walk"><div class="gallery-caption">Nyungwe Canopy Walk</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/lake-kivu.jpg" alt="Lake Kivu"><div class="gallery-caption">Lake Kivu — Peaceful Shores</div></div>
+            <div class="gallery-item"><img class="gallery-img" src="https://www.360askme.com/images/congo-nile.jpg" alt="Congo Nile Trail"><div class="gallery-caption">Rwanda — The Unique and Eternal Green Landscape</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 3: RwandAir Destinations -->
+<div class="section">
+    <div class="container" style="text-align: center;">
+        <div class="section-title">Connected to the <span class="section-title-gold">World</span></div>
+        <div class="section-subtitle">RwandAir — the national carrier — flies to 24 destinations across Africa, Europe, Asia, and the Middle East. Rwanda is not just a destination. It is a gateway.</div>
+        <div class="destinations-list">
+            <span class="destination-badge">🌍 Dubai</span><span class="destination-badge">✈️ London</span><span class="destination-badge">✈️ Paris</span>
+            <span class="destination-badge">✈️ Brussels</span><span class="destination-badge">✈️ Amsterdam</span><span class="destination-badge">✈️ Doha</span>
+            <span class="destination-badge">✈️ Addis Ababa</span><span class="destination-badge">✈️ Nairobi</span><span class="destination-badge">✈️ Johannesburg</span>
+            <span class="destination-badge">✈️ Cape Town</span><span class="destination-badge">✈️ Dar es Salaam</span><span class="destination-badge">✈️ Entebbe</span>
+            <span class="destination-badge">✈️ Kilimanjaro</span><span class="destination-badge">✈️ Zanzibar</span><span class="destination-badge">✈️ Lusaka</span>
+            <span class="destination-badge">✈️ Harare</span><span class="destination-badge">✈️ Lagos</span><span class="destination-badge">✈️ Accra</span>
+            <span class="destination-badge">✈️ Abidjan</span><span class="destination-badge">✈️ Douala</span><span class="destination-badge">✈️ Libreville</span>
+            <span class="destination-badge">✈️ Brazzaville</span><span class="destination-badge">✈️ Kinshasa</span><span class="destination-badge">✈️ Mumbai</span>
+            <span class="destination-badge">✈️ Guangzhou</span>
+        </div>
+        <p style="margin-top: 24px; color: #666; font-size: 14px;">*Destinations subject to seasonal schedules. Visit RwandAir for latest routes.</p>
+    </div>
+</div>
+
+<!-- Section 4: The Big Five -->
+<div class="section-alt">
+    <div class="container" style="text-align: center;">
+        <div class="section-title">Home of <span class="section-title-gold">The Big Five</span></div>
+        <div class="section-subtitle">Akagera National Park roars with life. Where lions hunt, elephants roam, rhinos stand ancient, leopards hide in shadows, and buffalo gather in thunderous herds.</div>
+        <div class="bigfive-grid">
+            <div class="bigfive-card"><img class="bigfive-img" src="https://www.360askme.com/images/lion.jpg" alt="Lion"><div class="bigfive-name">Lion</div></div>
+            <div class="bigfive-card"><img class="bigfive-img" src="https://www.360askme.com/images/leopard.jpg" alt="Leopard"><div class="bigfive-name">Leopard</div></div>
+            <div class="bigfive-card"><img class="bigfive-img" src="https://www.360askme.com/images/elephant.jpg" alt="Elephant"><div class="bigfive-name">Elephant</div></div>
+            <div class="bigfive-card"><img class="bigfive-img" src="https://www.360askme.com/images/rhinoceros.jpg" alt="Rhinoceros"><div class="bigfive-name">Rhinoceros</div></div>
+            <div class="bigfive-card"><img class="bigfive-img" src="https://www.360askme.com/images/buffalo.jpg" alt="Buffalo"><div class="bigfive-name">Buffalo</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Section 5: Investment Opportunities -->
+<div class="section">
+    <div class="container" style="text-align: center;">
+        <div class="section-title">Rwanda — Where <span class="section-title-gold">Opportunity Never Sleeps</span></div>
+        <div class="section-subtitle">Ease of doing business. A government that listens. A nation that builds. From agriculture feeding nations to construction reshaping skylines, from hospitality welcoming the world to technology reaching the stars — Rwanda invites you to grow with her.</div>
+        <div class="investment-grid">
+            <div class="investment-card"><img class="investment-img" src="https://www.360askme.com/images/agriculture.jpg" alt="Agriculture Rwanda"><div class="investment-content"><div class="investment-title">🌾 Agriculture</div><p>From coffee that conquers palates to tea that warms continents — Rwanda's soil is gold.</p></div></div>
+            <div class="investment-card"><img class="investment-img" src="https://www.360askme.com/images/construction.jpg" alt="Construction Rwanda"><div class="investment-content"><div class="investment-title">🏗️ Construction</div><p>Skylines rising. Roads connecting. A nation building its future — brick by brick.</p></div></div>
+            <div class="investment-card"><img class="investment-img" src="https://www.360askme.com/images/hospitality.jpg" alt="Hospitality Rwanda"><div class="investment-content"><div class="investment-title">🏨 Hospitality</div><p>World-class hotels. Unforgettable experiences. Rwanda welcomes the world with warmth.</p></div></div>
+        </div>
+        <p style="margin-top: 40px; font-style: italic; color: var(--gray-mid);">And beyond: technology, manufacturing, finance, energy, education, healthcare, mining, real estate, logistics, creative arts, and sports. Every sector. Every dream. Every possibility.</p>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+    <div class="container">
+        <div class="section-title" style="color: white;">Ready to Experience Rwanda?</div>
+        <p style="font-size: 18px; margin-bottom: 24px;">Let 360ASKME be your 24/7 companion. One click. 30 seconds. Everything handled.</p>
+        <a href="#" class="cta-button" id="whatsappButton">📱 Click Here to Get Service →</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div><div style="font-size:24px; font-weight:800;">360<span style="color:#FFD700;">ASKME</span></div><div style="color:#aaa; font-size:14px;">Stop Searching. Just Ask Me<br>Your 24/7 Local Companion</div></div>
+            <div><strong style="color:white;">Visit Us</strong><div style="color:#aaa; margin-top:12px;">Gisozi, Gasabo<br>KG712 St<br>Kigali, Rwanda</div></div>
+            <div><strong style="color:white;">Connect</strong><div style="color:#aaa; margin-top:12px;"><a href="https://wa.me/250788499031" style="color:#aaa; text-decoration:none;">+250 788 499 031</a><br><a href="mailto:ceo@360askme.com" style="color:#aaa; text-decoration:none;">ceo@360askme.com</a></div></div>
+        </div>
+        <div class="copyright">© 2026 360ASKME. Building Rwanda's 24/7 Service Infrastructure.</div>
+    </div>
+</div>
+
+<script>
+    const whatsappNumber = "250788499031";
+    document.getElementById('whatsappButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(`https://wa.me/${whatsappNumber}`, '_blank');
+    });
+</script>
+</body>
+</html>

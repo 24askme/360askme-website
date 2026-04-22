@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Rwanda | 360ASKME — The Complete Travel Guide</title>
+    <meta name="description" content="The complete guide to visiting Rwanda. Everything you need to know — visas, airport pickup, hotels, gorilla trekking, safety, and more. Your 24/7 local companion.">
+    <meta name="keywords" content="visit Rwanda, Rwanda travel guide, first time in Rwanda, Kigali airport pickup, gorilla trekking Rwanda, best places to visit in Africa, Rwanda tourism, Kigali hotels">
+    <meta name="author" content="360ASKME">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Georgia', serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --black: #000000;
+            --white: #ffffff;
+            --gray-light: #faf9f6;
+            --gray-mid: #4a4a4a;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .header {
+            padding: 20px 0;
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .logo-gold {
+            color: var(--gold);
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--gray-mid);
+            border-left: 2px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: var(--black);
+            color: var(--gold);
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+            border: 1px solid var(--black);
+        }
+
+        .nav-btn:hover {
+            background: transparent;
+            color: var(--black);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-gold {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            padding: 60px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .content-section-alt {
+            background-color: var(--gray-light);
+            padding: 60px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--black);
+        }
+
+        .section-title-gold {
+            color: var(--gold);
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 32px 0 16px;
+            color: var(--black);
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 24px 0 12px;
+            color: var(--black);
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--gray-mid);
+        }
+
+        ul, ol {
+            margin: 20px 0 20px 40px;
+            color: var(--gray-mid);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .cta-card {
+            background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+            color: white;
+            padding: 48px;
+            border-radius: 24px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-card h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+        }
+
+        .info-box {
+            background: var(--gray-light);
+            border-left: 4px solid var(--gold);
+            padding: 24px;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        .info-box strong {
+            color: var(--black);
+        }
+
+        .testimonial {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            margin-top: 16px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .toc {
+            background: var(--gray-light);
+            padding: 32px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ul {
+            margin-bottom: 0;
+            columns: 2;
+            column-gap: 40px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--black);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .toc a:hover {
+            border-bottom-color: var(--gold);
+        }
+
+        .footer {
+            background: var(--black);
+            color: #aaa;
+            padding: 48px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #333;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .section-title { font-size: 28px; }
+            .header-inner { flex-direction: column; text-align: center; }
+            .toc ul { columns: 1; }
+            .container { padding: 0 20px; }
+            .cta-card { padding: 32px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div>
+                <a href="/" class="logo">360<span class="logo-gold">ASKME</span></a>
+                <div class="tagline">Stop Searching. Just Ask Me</div>
+            </div>
+            <div class="nav">
+                <a href="/" class="nav-btn">🏠 Home</a>
+                <a href="/welcome-to-rwanda.html" class="nav-btn">🇷🇼 Rwanda</a>
+                <a href="/services.html" class="nav-btn">✨ Services</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hero">
+    <div class="container">
+        <h1>The Complete Guide to <span class="hero-gold">Visiting Rwanda</span></h1>
+        <p>Everything you need to know — from visas to gorillas, from airport pickup to retirement. Your journey starts here with 360ASKME, your 24/7 local companion.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="toc">
+        <h3>📖 What You Will Find in This Guide</h3>
+        <ul>
+            <li><a href="#visa">1. Visa Requirements — Do You Need One?</a></li>
+            <li><a href="#arrival">2. Arriving at Kigali International Airport</a></li>
+            <li><a href="#accommodation">3. Where to Stay in Kigali</a></li>
+            <li><a href="#transport">4. Getting Around Rwanda</a></li>
+            <li><a href="#gorillas">5. Gorilla Trekking — The Ultimate Experience</a></li>
+            <li><a href="#safety">6. Is Rwanda Safe? A Honest Answer</a></li>
+            <li><a href="#cost">7. Cost of Visiting Rwanda</a></li>
+            <li><a href="#business">8. Visiting for Business</a></li>
+            <li><a href="#retire">9. Retiring in Rwanda</a></li>
+            <li><a href="#expat">10. Living as an Expat</a></li>
+            <li><a href="#faq">11. Frequently Asked Questions</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Section 1: Visa -->
+<div class="content-section" id="visa">
+    <div class="container">
+        <div class="section-title">1. Visa Requirements — <span class="section-title-gold">Do You Need One?</span></div>
+        <p>Rwanda has one of the most welcoming visa policies in Africa. Citizens of all countries can obtain a visa on arrival at Kigali International Airport or at land borders. However, it is always better to prepare in advance.</p>
+
+        <h3>Visa on Arrival</h3>
+        <p>Most nationalities can get a 30-day tourist visa upon arrival. The cost is <strong>$50 USD</strong> (payable by credit card or cash).</p>
+
+        <h3>East Africa Tourist Visa</h3>
+        <p>If you plan to visit Rwanda, Kenya, and Uganda, get the <strong>East Africa Tourist Visa</strong> for $100 USD. It allows multiple entries across all three countries for 90 days.</p>
+
+        <div class="info-box">
+            <strong>💡 360ASKME Visa Assistance:</strong> Not sure which visa you need? Message us on WhatsApp with your passport nationality and travel dates. We will check and confirm within minutes. We can also help prepare your documents before you arrive. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="visaWaButton">Ask About Your Visa →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 2: Arrival -->
+<div class="content-section-alt" id="arrival">
+    <div class="container">
+        <div class="section-title">2. Arriving at <span class="section-title-gold">Kigali International Airport (KGL)</span></div>
+        <p>Kigali Airport is modern, clean, and efficient. From landing to leaving the terminal, most travelers clear immigration and baggage claim in under 45 minutes.</p>
+
+        <h3>What to Expect</h3>
+        <ul>
+            <li><strong>Free WiFi:</strong> Connect to "Kigali Airport Free WiFi" as soon as you land.</li>
+            <li><strong>SIM Cards:</strong> MTN and Airtel kiosks are open for all flights.</li>
+            <li><strong>Currency Exchange:</strong> There are ATMs and exchange counters in the arrivals hall.</li>
+            <li><strong>Taxi Services:</strong> Official airport taxis are available 24/7.</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>✈️ 360ASKME Airport Pickup Service — Your #1 Choice:</strong> Why figure out taxis and SIM cards when you land? We will have a verified driver waiting for you with a sign. We can also have a SIM card ready and help you get to your hotel smoothly. <strong>One message. 30 seconds. We handle the rest.</strong> Book before you arrive for a seamless welcome.
+        </div>
+
+        <a href="#" class="cta-button" id="arrivalWaButton">📱 Book Your 360ASKME Airport Pickup →</a>
+    </div>
+</div>
+
+<!-- Section 3: Accommodation -->
+<div class="content-section" id="accommodation">
+    <div class="container">
+        <div class="section-title">3. Where to Stay in <span class="section-title-gold">Kigali</span></div>
+        <p>Kigali has accommodation for every budget — from luxury hotels to affordable guesthouses and Airbnbs. But why search when 360ASKME can find and book the perfect place for you?</p>
+
+        <div class="info-box">
+            <strong>🏨 360ASKME Accommodation Service — Book First, Ask Questions Later:</strong> Not sure where to stay? Tell us your budget and preferences. We will find verified options and book for you — often at better rates than online platforms. One message. We handle the rest.
+        </div>
+
+        <a href="#" class="cta-button" id="accommodationWaButton">📱 Find My Hotel with 360ASKME →</a>
+    </div>
+</div>
+
+<!-- Section 4: Transport -->
+<div class="content-section-alt" id="transport">
+    <div class="container">
+        <div class="section-title">4. Getting Around <span class="section-title-gold">Rwanda</span></div>
+        <p>Rwanda is easy to navigate, and 360ASKME is your 24/7 transport partner.</p>
+
+        <h3>Within Kigali — With 360ASKME</h3>
+        <ul>
+            <li><strong>360ASKME Driver Service:</strong> Need a trusted driver for an hour, a day, or a week? One message. We handle it.</li>
+            <li><strong>Moto-taxis:</strong> Fast and cheap. Use "Yegol" or "SafeMoto" apps.</li>
+            <li><strong>Car taxis:</strong> Use "Move" or "Yango" apps.</li>
+        </ul>
+
+        <h3>Between Cities — With 360ASKME</h3>
+        <ul>
+            <li><strong>Volcanoes National Park (Gorillas):</strong> 2.5 hours from Kigali. Let 360ASKME arrange your transport.</li>
+            <li><strong>Lake Kivu (Rubavu/Gisenyi):</strong> 3 hours. We can book your trip.</li>
+            <li><strong>Nyungwe Forest (Chimpanzees):</strong> 4-5 hours. We handle the logistics.</li>
+            <li><strong>Akagera National Park (Safari):</strong> 2.5 hours. Day trips or overnight — we arrange it.</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>🚗 360ASKME Transport Service — Always First, Always Reliable:</strong> Need a driver for a day trip? A private car to Musanze? A trusted ride at 2 AM? We handle it. Verified drivers. Fair prices. 24/7. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="transportWaButton">Book Your 360ASKME Driver →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 5: Gorilla Trekking -->
+<div class="content-section" id="gorillas">
+    <div class="container">
+        <div class="section-title">5. Gorilla Trekking — <span class="section-title-gold">The Ultimate Experience</span></div>
+        <p>Tracking mountain gorillas in Volcanoes National Park is one of the most profound wildlife experiences on Earth. It is expensive — but worth every penny.</p>
+
+        <h3>Permit Costs (as of 2026)</h3>
+        <ul>
+            <li><strong>Foreign non-residents:</strong> $1,500 USD per person</li>
+            <li><strong>Foreign residents of Rwanda:</strong> $500 USD</li>
+            <li><strong>East African citizens:</strong> $200 USD</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>🦍 360ASKME Gorilla Trekking Service:</strong> We can book your permit, arrange transport to Musanze, and organize accommodation. One message. 30 seconds. We handle everything. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="gorillaWaButton">Plan My Gorilla Trek with 360ASKME →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 6: Safety -->
+<div class="content-section-alt" id="safety">
+    <div class="container">
+        <div class="section-title">6. Is Rwanda Safe? <span class="section-title-gold">An Honest Answer</span></div>
+        <p><strong>Yes. Rwanda is one of the safest countries in Africa and the world.</strong></p>
+        <p>Kigali is consistently ranked as one of the safest capitals on the continent. Violent crime against tourists is extremely rare. Women can walk alone at night in many neighborhoods.</p>
+
+        <div class="info-box">
+            <strong>🛡️ 360ASKME Emergency Support — 24/7:</strong> If anything goes wrong — lost passport, medical issue, roadside breakdown — message 360ASKME. We are awake. We will help. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="safetyWaButton">Emergency Contact →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 7: Cost -->
+<div class="content-section" id="cost">
+    <div class="container">
+        <div class="section-title">7. Cost of <span class="section-title-gold">Visiting Rwanda</span></div>
+        <p>Rwanda can be as budget-friendly or as luxurious as you choose. Let 360ASKME help you plan within your budget.</p>
+
+        <h3>Sample Daily Budgets</h3>
+        <ul>
+            <li><strong>Budget traveler:</strong> $30-50/day</li>
+            <li><strong>Mid-range traveler:</strong> $80-120/day</li>
+            <li><strong>Luxury traveler:</strong> $200-500+/day</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>💰 360ASKME Budget Planning:</strong> Want a personalized itinerary within your budget? Message us. We will create a plan that matches your preferences and handles all bookings. <a href="#" class="cta-button" style="display: inline-block; margin-top: 10px; font-size: 14px; padding: 8px 20px;" id="costWaButton">Plan My Trip with 360ASKME →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section 8: FAQ -->
+<div class="content-section-alt" id="faq">
+    <div class="container">
+        <div class="section-title">8. Frequently Asked <span class="section-title-gold">Questions</span></div>
+
+        <h4>Do I need a visa to visit Rwanda?</h4>
+        <p>Most nationalities get a 30-day visa on arrival for $50 USD. <a href="#" id="faqVisaWaLink">Message us to check your nationality →</a></p>
+
+        <h4>Is Rwanda expensive?</h4>
+        <p>It depends. Budget travelers can survive on $30/day. The gorilla permit ($1,500) is the biggest expense.</p>
+
+        <h4>Is it safe to travel alone as a woman?</h4>
+        <p>Yes. Rwanda is considered one of the safest African countries for solo female travelers.</p>
+
+        <h4>What if I need help in the middle of the night?</h4>
+        <p>Message 360ASKME. We are awake 24/7. Medical issue? Locked out of your hotel? Lost your passport? We help.</p>
+
+        <div class="cta-card">
+            <h3>Still have questions about visiting Rwanda?</h3>
+            <p>Stop searching. Just Ask Me. One message. 30 seconds. We handle the rest.</p>
+            <a href="#" class="cta-button" id="finalWaButton">📱 Ask Your Question Now →</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div><div style="font-size:24px; font-weight:800;">360<span style="color:#FFD700;">ASKME</span></div><div style="color:#aaa; font-size:14px;">Stop Searching. Just Ask Me<br>Your 24/7 Local Companion</div></div>
+            <div><strong style="color:white;">Visit Us</strong><div style="color:#aaa; margin-top:12px;">Gisozi, Gasabo<br>KG712 St<br>Kigali, Rwanda</div></div>
+            <div><strong style="color:white;">Connect</strong><div style="color:#aaa; margin-top:12px;"><a href="https://wa.me/250788499031" style="color:#aaa; text-decoration:none;">+250 788 499 031</a><br><a href="mailto:ceo@360askme.com" style="color:#aaa; text-decoration:none;">ceo@360askme.com</a></div></div>
+        </div>
+        <div class="copyright">© 2026 360ASKME. Building Rwanda's 24/7 Service Infrastructure.</div>
+    </div>
+</div>
+
+<script>
+    const whatsappNumber = "250788499031";
+    const travelMessage = "I am planning to visit Rwanda. Can you help me with information and services?";
+
+    const buttons = ['visaWaButton', 'arrivalWaButton', 'accommodationWaButton', 'transportWaButton', 'gorillaWaButton', 'safetyWaButton', 'costWaButton', 'faqVisaWaLink', 'finalWaButton'];
+
+    buttons.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(travelMessage)}`, '_blank');
+            });
+        }
+    });
+</script>
+</body>
+</html>
